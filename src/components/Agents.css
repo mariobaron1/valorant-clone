@@ -1,0 +1,218 @@
+.agents{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.agents video{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    object-fit: cover;
+}
+
+.agent{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 30px;
+}
+
+.list-agent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-size: 50px;
+    align-items: center;
+    transition-duration: 1s ease;
+}
+
+.list-agent h2:hover{
+    cursor: pointer;
+}
+
+.list-main img{
+    width: 387px;
+    height: 600px;
+}
+
+.skills-agents{
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+    background: url('./valorants-bg-skills.png');
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    
+}
+
+.skills-agents h1{
+    font-size: 80px;
+    margin-top: 50px;
+}
+
+.skill-main{
+    display: flex;
+    flex-direction: row;
+}
+
+.info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.btn-skill button{
+    outline: none;
+    border: none;
+    background-color: #FF4654;
+    margin: 10px;
+    padding: 20px 40px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn.btn-background-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: black;
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.btn.btn-background-slide:hover::before,
+.btn.btn-background-slide:focus::before {
+    transform: scaleX(1);
+}
+
+.btn.btn-background-slide {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+}
+
+.video-skill{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.video-skill video{
+    width: 80%;
+    height: 400px;
+}
+
+@media screen and (max-width: 768px){
+
+
+    .list-agent{
+        flex-direction: column;
+    }
+
+    .list-1{
+        display: flex;
+        overflow-x: auto;
+        max-width: 300px;
+    }
+
+    .list-1::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .list-1 > h2{
+        width: 500px;
+        margin: 7px;
+        font-size: 50px;
+    }
+
+    .list-main img{
+        width: 270px;
+        height: 400px;
+    }
+
+    .list-2{
+        display: flex;
+        overflow-x: auto;
+        max-width: 300px;
+    }
+
+    .list-2::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .list-2 > h2{
+        width: 500px;
+        margin: 7px;
+        font-size: 50px;
+    }
+
+    .skills-agents{
+        min-height: 70vh;
+    }
+
+    .skills-agents h1{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .skill-main{
+        flex-direction: column;
+    }
+
+    .info{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .info h1{
+        font-size: 40px;
+    }
+
+    .btn-skill{
+        order: 3;
+    }
+
+    .btn-skill button{
+        padding: 5px 20px;
+        font-size: 8px;
+        height: 40px;
+        width: 25%;
+    }
+
+    .video-skill{
+        width: 100%;
+        order: 2;
+    }
+
+    .video-skill video{
+        width: 80%;
+        height: 200px;
+        order: 1;
+    }
+}
+

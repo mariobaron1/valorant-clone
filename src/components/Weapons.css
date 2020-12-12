@@ -1,0 +1,29 @@
+.Weapons{
+    background: url(./valorants-bg-skills.png);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.Weapons h1{
+    font-size: 80px;
+    margin-left: 40px;
+}
+
+.Container{
+    width: 80%;
+    min-height: 100%;
+    margin: auto;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+    .Weapons h1{
+        font-size: 40px;
+        margin-left: 0px;
+        text-align: center;
+    }
+}
