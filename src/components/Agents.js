@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Agents.css'
+import Parallax from 'react-rellax'
 
 function Agents() {
     const [image, setImage] = useState("jett")
@@ -14,6 +15,7 @@ function Agents() {
     }
 
     useEffect(() => {
+
     }, [skill])
 
 
@@ -23,7 +25,6 @@ function Agents() {
                 <video autoPlay loop muted>
                     <source src="video/agent-background-generic.mp4" type="video/mp4" />
                 </video>
-                {/* <img src="img/valorant-bg-agents.png" alt="background" /> */}
                 <div className="agent">
                     <div className="list-agent">
                         <div className="list-1">
@@ -36,7 +37,10 @@ function Agents() {
                         </div>
 
                         <div className="list-main">
-                            <img src={`img/${image}.png`} alt={image} />
+                            <Parallax speed={-2}>
+                                <img src={`img/${image}.png`} alt={image} />
+                            </Parallax>
+
                         </div>
 
                         <div className="list-2">
@@ -52,8 +56,8 @@ function Agents() {
             </div >
 
             <div className="skills-agents">
-                {/* <img src="img/valorants-bg-skills.png" alt="background" /> */}
                 <h1>Skills Agent</h1>
+
                 <div class="skill-main">
                     <div className="info">
                         <div className="btn-skill">
