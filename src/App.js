@@ -6,11 +6,13 @@ import Agents from './components/Agents';
 import Weapons from './components/Weapons';
 import Maps from './components/Maps';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
 
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Switch>
           <Route path="/" exact component={Home}>
