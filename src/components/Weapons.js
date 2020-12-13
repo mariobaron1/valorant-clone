@@ -9,7 +9,7 @@ function Weapons() {
         <div className="Weapons">
             <h1>Weapons</h1>
             <div className="Container">
-                <Parallax speed={3}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 3}>
                     <Weapon
                         source="Classic"
                         title="Classic"
@@ -18,7 +18,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={2}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 2}>
                     <Weapon
                         source="Shorty"
                         title="Shorty"
@@ -27,7 +27,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={1}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 1}>
                     <Weapon
                         source="Frenzy"
                         title="Frenzy"
@@ -36,7 +36,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={3}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 3}>
                     <Weapon
                         source="Ghost"
                         title="Ghost"
@@ -45,7 +45,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={2}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 2}>
                     <Weapon
                         source="Sheriff"
                         title="Sheriff"
@@ -54,7 +54,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={1}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 1}>
                     <Weapon
                         source="Stinger"
                         title="Stinger"
@@ -63,7 +63,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={3}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 3}>
                     <Weapon
                         source="Spectre"
                         title="Spectre"
@@ -72,7 +72,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={2}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 2}>
                     <Weapon
                         source="Bucky"
                         title="Bucky"
@@ -81,7 +81,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={1}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 1}>
                     <Weapon
                         source="Judge"
                         title="Judge"
@@ -90,7 +90,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={3}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 3}>
                     <Weapon
                         source="Bulldog"
                         title="Bulldog"
@@ -99,7 +99,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={2}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 2}>
                     <Weapon
                         source="Guardian"
                         title="Guardian"
@@ -108,7 +108,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={1}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 1}>
                     <Weapon
                         source="Phantom"
                         title="Phantom"
@@ -117,7 +117,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={3}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 3}>
                     <Weapon
                         source="Vandal"
                         title="Vandal"
@@ -126,7 +126,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={2}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 2}>
                     <Weapon
                         source="Marshal"
                         title="Marshal"
@@ -135,7 +135,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={1}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 1}>
                     <Weapon
                         source="Operator"
                         title="Operator"
@@ -144,7 +144,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={3}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 3}>
                     <Weapon
                         source="Ares"
                         title="Ares"
@@ -153,7 +153,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={2}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 2}>
                     <Weapon
                         source="Odin"
                         title="Odin"
@@ -162,7 +162,7 @@ function Weapons() {
                     />
                 </Parallax>
 
-                <Parallax speed={1}>
+                <Parallax speed={window.innerWidth < 768 ? 0 : 1}>
                     <Weapon
                         source="TacticalKnife"
                         title="Tactical Knife"
