@@ -1,6 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
+import { motion } from 'framer-motion'
+
+const navbarVariants = {
+    hidden: {
+        y: "-100vh"
+    },
+    visible: {
+        y: 0,
+        transition: {
+            duration: 1,
+            type: "spring",
+            stiffness: 100
+        }
+    }
+}
 
 function Navbar() {
     const [click, setClick] = useState(false)
@@ -25,7 +40,7 @@ function Navbar() {
 
     return (
         <div className='navbar'>
-            <div class="navbar_container">
+            <motion.div class="navbar_container" variants={navbarVariants} initial="hidden" animate="visible">
                 <Link to="/" className="navbar_logo">
                     <img src="img/valorant-logo.png" alt="Logo" />
                 </Link>
@@ -50,7 +65,7 @@ function Navbar() {
                 <div class="navbar_button">
                     <button className="btn-nav">PLAY NOW</button>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
